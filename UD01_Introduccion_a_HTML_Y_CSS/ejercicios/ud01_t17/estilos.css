@@ -114,4 +114,11 @@ tfoot *{
 }
 
 
+/* Agregado fuera de clases: tr:hover para resalatar las filas al pasar por encima*/
+
+tbody tr:hover{
+    background-color: var(--ocre);
+}
+
+
 

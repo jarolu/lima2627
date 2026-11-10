@@ -1,0 +1,94 @@
+:root {
+    --verde-claro: rgb(146, 239, 208);
+    --verde: rgb(79, 231, 160);
+    --verde-oscuro: rgb(22, 58, 46);
+    --amarillo-claro: khaki;
+    --oro: rgb(205, 174, 0);
+
+    font-size: 0.8em;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    
+    height: 100vh;
+    
+}
+
+article {
+    height: 410px;
+    width: 260px;    
+    /*Esquienas redondeadas menos la superior izquierda*/
+    border-radius: 0 1em 1em 1em;
+    /*centrado horizontal de la caja*/
+    margin: 0 auto;
+
+    margin-top: calc(calc(100vh - 400px) / 2 );
+
+    /*Relleno de la caja*/
+    padding: 1rem;
+
+    /*Sombra de la caja*/
+    box-shadow: 0.25em 0.25em 0.5em grey;
+
+}
+
+img {
+    /*Ajustamos manualmente la altura de la imagen a la mitad del tamaño del contenedor padre*/
+    height: 180px;
+
+}
+
+.imagen {
+    /*Al contenedor de la imagen le indicamos que alinee su texto al centro=> img es una etiqueta en línea, entonces se comporta como texto*/
+    text-align: center;
+
+}
+
+.descripcion h1 {
+    color: var(--verde-oscuro);
+
+}
+
+.descripcion a {
+   
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.precio {
+    padding: 0.25rem 0.75rem;
+    display: inline-block;
+    
+    background-color: var(--verde-claro);
+    color: var(--verde-oscuro);
+}
+
+.comprar{
+     padding: 0.25rem;
+    display: block;
+    background-color: var(--verde);
+   
+    color: var(--verde-oscuro);
+
+}
+
+.valoracion{
+    padding: 0.25rem 0.75rem;
+    display: inline-block;
+    color: var(--oro);
+    background-color: var(--amarillo-claro);
+
+}
+
+.descripcion p{
+    font-size: 0.8em;
+
+}
